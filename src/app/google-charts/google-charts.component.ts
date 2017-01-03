@@ -2,13 +2,13 @@ import { Component, AfterViewInit } from '@angular/core';
 declare let google: any;
 
 @Component({
-    selector: 'google-charts',
-    templateUrl: './google-charts.component.html',
-    styleUrls: ['./google-charts.component.scss']
+	selector: 'google-charts',
+	templateUrl: './google-charts.component.html',
+	styleUrls: ['./google-charts.component.scss']
 })
 export class GoogleChartsComponent implements AfterViewInit {
-    ngAfterViewInit() {
-        google.charts.load('current', {'packages':['bar']});
+	ngAfterViewInit() {
+		google.charts.load('current', {'packages':['bar']});
 		google.charts.setOnLoadCallback(drawChart);
 		function drawChart() {
 			let data = google.visualization.arrayToDataTable([
@@ -26,9 +26,9 @@ export class GoogleChartsComponent implements AfterViewInit {
 				['2016', 660, 1120, 300],
 				['2016', 260, 920, 330],
 				['2016', 660, 1120, 300],
-                ['2015', 1170, 460, 250],
+				['2015', 1170, 460, 250],
 				['2016', 660, 1120, 300],
-                ['2016', 260, 920, 330],
+				['2016', 260, 920, 330],
 				['2016', 660, 1120, 300],
 				['2016', 660, 1120, 300],
 				['2016', 660, 1120, 300],
@@ -77,5 +77,5 @@ export class GoogleChartsComponent implements AfterViewInit {
 
 			chart.draw(data, google.charts.Bar.convertOptions(options));
 		}
-    }
+	}
 }

@@ -11,8 +11,9 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
-import { GoogleChartsComponent } from './google-charts';
 import { NavigationComponent } from './navigation';
+import { GoogleChartsComponent } from './google-charts';
+import { ChartjsComponent } from './chartjs';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -21,7 +22,8 @@ import { NavigationComponent } from './navigation';
     NavigationComponent,
     HomeComponent,
     AboutComponent,
-    GoogleChartsComponent
+    GoogleChartsComponent,
+    ChartjsComponent
   ],
   imports: [
     routing,

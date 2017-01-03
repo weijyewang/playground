@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { GoogleChartsComponent } from './google-charts';
+import { ChartjsComponent } from './chartjs';
 
 export const appRoutes: Routes = [
   // #/ -> #/home
@@ -14,6 +15,8 @@ export const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   // #/google-charts
   { path: 'google-charts', component: GoogleChartsComponent },
+  // #/google-charts
+  { path: 'chartjs', component: ChartjsComponent },
   // #/xyz -> #/home
   { path: '**', redirectTo: 'home' }
 ];
