@@ -32,6 +32,7 @@
     "@angular/router": "~3.4.0",
     "@ng-bootstrap/ng-bootstrap": "1.0.0-alpha.13",
     "bootstrap": "4.0.0-alpha.5",
+    "chart.js": "^2.4.0",
     "core-js": "2.4.1",
     "ie-shim": "0.1.0",
     "ng2-translate": "4.0.0",
