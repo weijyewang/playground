@@ -1,0 +1,16 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Partials
+@import 'partials/custom';
+
+// Temporary Bootstrap 4 fix
+.navbar {
+  @include media-breakpoint-down(sm) {
+    .navbar-brand {
+      display: block;
+      float: none;
+      height: 40px;
+    }
+  }
+}
