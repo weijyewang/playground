@@ -70,7 +70,11 @@ export class GoogleChartsComponent implements AfterViewInit {
 					title: 'Company Performance',
 					subtitle: 'Sales, Expenses, and Profit: 2014-2017'
 				},
-				bars: 'horizontal' // Required for Material Bar Charts.,
+				animation:{
+					duration: 1000,
+					easing: 'out',
+				},
+				bars: 'horizontal' // Required for Material Bar Charts.
 			};
 
 			let chart = new google.charts.Bar(document.getElementById('chart_div'));
